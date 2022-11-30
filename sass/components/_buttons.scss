@@ -4,7 +4,7 @@
 
 	margin-top: 30px;
 
-	transition: background-color var(--transition-color-function);
+	transition: background-color var(--transition-color-function), box-shadow var(--transition-color-function);
 
 	&:hover,
 	&:focus {
@@ -41,25 +41,37 @@
 }
 
 .form__button {
+	@extend %button;
+
 	display: block;
-
-	padding: 10px 52px;
-	min-width: 200px;
-	background: #188CE8;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-	border: none;
 	margin: 0 auto;
+	transition: background-color var(--transition-color-function);
 
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: calc(30/16);
+	&:hover,
+	&:focus {
+		background-color: var(--hero-button-blue-color);
+	}
+}
 
-	cursor: pointer;
-	align-items: center;
-	text-align: center;
-	letter-spacing: 0.06em;
+.subscribe__button {
+	@extend %button;
 
-	color: var(--primary-white-color);
+	gap: 10px;
+
+	transition: background-color var(--transition-color-function), box-shadow var(--transition-color-function);
+
+	&::after {
+		content: "";
+		display: block;
+		width: 24px;
+		height: 24px;
+		background-image: url(../../images/send.svg);
+		color: var(--primary-white-color);
+	}
+
+	&:hover,
+	&:focus {
+		background-color: var(--hero-button-blue-color);
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	}
 }

@@ -413,28 +413,28 @@
 					<p class="social-header">приєднуйтесь</p>
 					<ul class="socials">
 						<li class="socials__item">
-							<a class="ocials__link" href="#">
+							<a class="socials__link socials__link--secondary" href="#">
 								<svg class="social__icon" width="20px" height="20px">
 									<use href="./images/symbol-defs.svg#icon-instagram"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="socials__item">
-							<a class="ocials__link" href="#">
+							<a class="socials__link socials__link--secondary" href="#">
 								<svg class="social__icon" width="20px" height="20px">
 									<use href="./images/symbol-defs.svg#icon-twitter"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="socials__item">
-							<a class="ocials__link" href="#">
+							<a class="socials__link socials__link--secondary" href="#">
 								<svg class="social__icon" width="20px" height="20px">
 									<use href="./images/symbol-defs.svg#icon-facebook"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="socials__item">
-							<a class="ocials__link" href="#">
+							<a class="socials__link socials__link--secondary" href="#">
 								<svg class="social__icon" width="20px" height="20px">
 									<use href="./images/symbol-defs.svg#icon-linkedin"></use>
 								</svg>
@@ -445,25 +445,23 @@
 
 				<!-- subscription -->
 				<form
-					class="subscription"
+					class="subscribe"
 					name="subscription-form"
 					autocomplete="off"
 					novalidate>
-					<strong class="subscription-title">Підпишіться на розсилку</strong>
-					<label class="subscription-label" for="subscription-email">
+					<strong class="subscribe__appeal">Підпишіться на розсилку</strong>
+					<label class="subscribe__label" for="subscription-email">
 						<span class="visually-hidden">Email</span>
 					</label>
-					<div class="subscription-group">
+					<div class="subscribe__group">
 						<input
-							class="subscription-input"
+							class="subscribe__input"
 							id="subscription-email"
 							type="email"
 							name="email"
 							placeholder="E-mail"
 							autofocus />
-						<button class="subscription-button" type="submit">
-							Підписатися
-						</button>
+						<button class="subscribe__button" type="submit">Підписатися</button>
 					</div>
 				</form>
 			</div>
@@ -479,10 +477,11 @@
 				</button>
 
 				<!-- Request form -->
-				<strong class="contacts__title"
-					>Залиште свої дані, ми вам передзвонимо</strong
-				>
+
 				<form name="form">
+					<strong class="form__appeal"
+						>Залиште свої дані, ми вам передзвонимо</strong
+					>
 					<label class="form__label" for="name">Ім'я</label>
 					<div class="form__field">
 						<input

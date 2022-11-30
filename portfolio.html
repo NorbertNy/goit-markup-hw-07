@@ -306,33 +306,31 @@
 			</section>
 		</main>
 		<!--Footer-->
-		<footer class="portfolio-footer">
-			<div class="container portfolio-footer-container">
-				<!-- Contacts -->
-				<div class="portfolio-footer-contacts">
-					<a class="portfolio-footer-logo" href="./index.html">
-						<span class="portfolio-footer-logo-beginning">Web</span>Studio</a
+		<footer class="footer">
+			<div class="footer__container container">
+				<!-- contacts -->
+				<div class="footer__contacts">
+					<a class="logo" href="./index.html"
+						>Web<span class="logo__end-light">Studio</span></a
 					>
-					<address class="portfolio-footer-address">
-						<ul class="portfolio-address-list list">
-							<li class="portfolio-address-name">
+					<address class="footer__address">
+						<ul class="footer__list">
+							<li class="footer__item">
 								<a
-									class="portfolio-address-link"
+									class="footer__link footer__link--map"
 									href="https://goo.gl/maps/Sw8dZLhLuQjKVcCd9"
 									target="_blank"
 									rel="noopener noreferrer nofollow"
 									>м. Київ, пр-т Лесі Українки, 26</a
 								>
 							</li>
-							<li class="portfolio-footer-mail-cont">
-								<a
-									class="portfolio-footer-mail-link"
-									href="mailto:info@devstudio.com"
+							<li class="footer__item">
+								<a class="footer__link" href="mailto:info@devstudio.com"
 									>info@devstudio.com</a
 								>
 							</li>
-							<li class="portfolio-footer-tel-cont">
-								<a class="portfolio-footer-tel-link" href="tel:+380961111111"
+							<li class="footer__item">
+								<a class="footer__link" href="tel:+380961111111"
 									>+38 096 111 11 11</a
 								>
 							</li>
@@ -340,34 +338,34 @@
 					</address>
 				</div>
 
-				<!-- Social -->
-				<div class="portfolio-footer-social">
-					<p class="portfolio-social-header">приєднуйтесь</p>
-					<ul class="portfolio-social-list list">
-						<li class="portfolio-social-item">
-							<a class="portfolio-social-link" href="#">
-								<svg class="portfolio-social-icon" width="20px" height="20px">
+				<!-- social -->
+				<div class="footer-social">
+					<p class="social-header">приєднуйтесь</p>
+					<ul class="socials">
+						<li class="socials__item">
+							<a class="socials__link socials__link--secondary" href="#">
+								<svg class="social__icon" width="20px" height="20px">
 									<use href="./images/symbol-defs.svg#icon-instagram"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="portfolio-social-item">
-							<a class="portfolio-social-link" href="#">
-								<svg class="portfolio-social-icon" width="20px" height="20px">
+						<li class="socials__item">
+							<a class="socials__link socials__link--secondary" href="#">
+								<svg class="social__icon" width="20px" height="20px">
 									<use href="./images/symbol-defs.svg#icon-twitter"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="portfolio-social-item">
-							<a class="portfolio-social-link" href="#">
-								<svg class="portfolio-social-icon" width="20px" height="20px">
+						<li class="socials__item">
+							<a class="socials__link socials__link--secondary" href="#">
+								<svg class="social__icon" width="20px" height="20px">
 									<use href="./images/symbol-defs.svg#icon-facebook"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="portfolio-social-item">
-							<a class="portfolio-social-link" href="#">
-								<svg class="portfolio-social-icon" width="20" height="20">
+						<li class="socials__item">
+							<a class="socials__link socials__link--secondary" href="#">
+								<svg class="social__icon" width="20px" height="20px">
 									<use href="./images/symbol-defs.svg#icon-linkedin"></use>
 								</svg>
 							</a>
@@ -377,27 +375,23 @@
 
 				<!-- subscription -->
 				<form
-					class="portfolio-subscription"
+					class="subscribe"
 					name="subscription-form"
 					autocomplete="off"
 					novalidate>
-					<strong class="portfolio-subscription__title"
-						>Підпишіться на розсилку</strong
-					>
-					<label class="portfolio-subscription__label" for="subscription-email">
+					<strong class="subscribe__appeal">Підпишіться на розсилку</strong>
+					<label class="subscribe__label" for="subscription-email">
 						<span class="visually-hidden">Email</span>
 					</label>
-					<div class="portfolio-subscription__group">
+					<div class="subscribe__group">
 						<input
-							class="portfolio-subscription__input"
+							class="subscribe__input"
 							id="subscription-email"
 							type="email"
 							name="email"
 							placeholder="E-mail"
 							autofocus />
-						<button class="portfolio-subscription__button" type="submit">
-							Підписатися
-						</button>
+						<button class="subscribe__button" type="submit">Підписатися</button>
 					</div>
 				</form>
 			</div>

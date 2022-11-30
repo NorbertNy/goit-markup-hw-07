@@ -39,7 +39,7 @@
   overflow: hidden;
 }
 
-.hero__button {
+.subscribe__button, .form__button, .hero__button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -75,23 +75,6 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color-text);
-}
-
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.portfolio__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  list-style-type: none;
-  gap: 8px;
 }
 
 /* cyrillic */
@@ -483,6 +466,23 @@ body {
   color: var(--primary-white-color);
 }
 
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  gap: 8px;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -590,8 +590,10 @@ body {
 .hero__button {
   width: 216px;
   margin-top: 30px;
-  -webkit-transition: background-color var(--transition-color-function);
-  transition: background-color var(--transition-color-function);
+  -webkit-transition: background-color var(--transition-color-function), -webkit-box-shadow var(--transition-color-function);
+  transition: background-color var(--transition-color-function), -webkit-box-shadow var(--transition-color-function);
+  transition: background-color var(--transition-color-function), box-shadow var(--transition-color-function);
+  transition: background-color var(--transition-color-function), box-shadow var(--transition-color-function), -webkit-box-shadow var(--transition-color-function);
 }
 .hero__button:hover, .hero__button:focus {
   background-color: var(--hero-button-blue-color);
@@ -624,25 +626,33 @@ body {
 
 .form__button {
   display: block;
-  padding: 10px 52px;
-  min-width: 200px;
-  background: #188CE8;
+  margin: 0 auto;
+  -webkit-transition: background-color var(--transition-color-function);
+  transition: background-color var(--transition-color-function);
+}
+.form__button:hover, .form__button:focus {
+  background-color: var(--hero-button-blue-color);
+}
+
+.subscribe__button {
+  gap: 10px;
+  -webkit-transition: background-color var(--transition-color-function), -webkit-box-shadow var(--transition-color-function);
+  transition: background-color var(--transition-color-function), -webkit-box-shadow var(--transition-color-function);
+  transition: background-color var(--transition-color-function), box-shadow var(--transition-color-function);
+  transition: background-color var(--transition-color-function), box-shadow var(--transition-color-function), -webkit-box-shadow var(--transition-color-function);
+}
+.subscribe__button::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../../images/send.svg);
+  color: var(--primary-white-color);
+}
+.subscribe__button:hover, .subscribe__button:focus {
+  background-color: var(--hero-button-blue-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  margin: 0 auto;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  cursor: pointer;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--primary-white-color);
 }
 
 .overlay-info {
@@ -698,6 +708,10 @@ body {
           transform: translateY(0%);
 }
 
+.footer-social {
+  margin-left: 70px;
+}
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -709,22 +723,22 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  list-style-type: none;
   gap: 10px;
 }
 
+.social-header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
 .socials__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 44px;
   height: 44px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .socials__link {
@@ -740,12 +754,17 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: var(--primary-white-color);
   color: var(--primary-icon-gray-color);
   -webkit-transition: color var(--transition-color-function), background-color var(--transition-color-function);
   transition: color var(--transition-color-function), background-color var(--transition-color-function);
 }
 .socials__link:hover, .socials__link:focus {
   background-color: var(--primary-blue-color);
+  color: var(--primary-white-color);
+}
+.socials__link--secondary {
+  background-color: var(--footer-icon-bg-black-color);
   color: var(--primary-white-color);
 }
 
@@ -865,7 +884,7 @@ body {
   fill: var(--primary-blue-color);
 }
 
-.contacts__title {
+.form__appeal {
   display: block;
   margin-bottom: 12px;
   font-family: "Roboto", sans-serif;
@@ -1033,4 +1052,38 @@ body {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: var(--primary-blue-color);
+}
+
+.subscribe {
+  margin-left: 93px;
+}
+
+.subscribe__appeal {
+  display: block;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.subscribe__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subscribe__input {
+  margin-right: 12px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  background-color: inherit;
+  color: var(--alternativ-gray-color-rgba);
 }/*# sourceMappingURL=main.css.map */

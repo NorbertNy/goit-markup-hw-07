@@ -606,13 +606,13 @@
 
 
 /* Section Social Style */
-.footer-social {
+
+/* .footer-social {
     margin-left: 70px;
-}
+} */
 
 
-.social-header {
-    margin: 0 0 20px 0;
+/* .social-header {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -620,7 +620,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-white-color);
-}
+} */
 
 .social-list {
     display: flex;
@@ -659,11 +659,12 @@
 }
 
 /* Section subscription style */
-.subscription {
-    margin-left: 93px;
-}
 
-.subscription-title {
+/* .subscribe {
+    margin-left: 93px;
+} */
+
+/* .subscribe__appeal {
     display: block;
     margin-top: 0;
     margin-bottom: 20px;
@@ -674,15 +675,15 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-white-color);
-}
+} */
 
 .subscription-label {}
 
-.subscription-group {
+/* .subscribe__group {
     display: flex;
-}
+} */
 
-.subscription-input {
+/* .subscribe__input {
     margin-right: 12px;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -693,10 +694,10 @@
 
     background-color: inherit;
     color: var(--alternativ-gray-color-rgba);
-    /* outline: none; */
-}
+    outline: none;
+} */
 
-.subscription-button {
+/* .subscribe__button {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -715,16 +716,16 @@
 
     background-color: var(--primary-blue-color);
     color: var(--primary-white-color);
-}
+} */
 
-.subscription-button::after {
+/* .subscribe__button::after {
     content: "";
     display: block;
     width: 24px;
     height: 24px;
     background-image: url(../images/send.svg);
     color: var(--primary-white-color);
-}
+} */
 
 
 /* Page portfolio style */
