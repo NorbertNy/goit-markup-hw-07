@@ -622,7 +622,7 @@
     color: var(--primary-white-color);
 } */
 
-.social-list {
+/* .social-list {
     display: flex;
     list-style-type: none;
     gap: 10px;
@@ -656,7 +656,7 @@
 .social-link:hover, 
 .social-link:focus {
     background-color: var(--primary-blue-color);
-}
+} */
 
 /* Section subscription style */
 
@@ -677,7 +677,6 @@
     color: var(--primary-white-color);
 } */
 
-.subscription-label {}
 
 /* .subscribe__group {
     display: flex;
@@ -732,7 +731,8 @@
 
 
 /* Portfolio Header style */
-.portfolio-header {
+
+/* .portfolio-header {
     border-bottom: 1px solid var(--header-border-gray-color);
 }
 
@@ -833,7 +833,7 @@
 .portfolio-mail-link:hover, .portfolio-mail-link:focus,
 .portfolio-tel-link:hover, .portfolio-tel-link:focus {
     color: var(--primary-blue-color);
-}
+} */
 
 /* Portfolio Main style */
 
@@ -998,7 +998,8 @@
 
 
 /* Portfolio footer style */
-.portfolio-footer {
+
+/* .portfolio-footer {
     background-color: var(--hero-footer-black-color);
     padding: 60px 0;
 }
@@ -1006,11 +1007,12 @@
 .portfolio-footer-container {
     display: flex;
     align-items: baseline;
-}
+} */
 
 
 /* Section Portfolio Footer Address style */
-.portfolio-footer-logo {
+
+/* .portfolio-footer-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -1059,11 +1061,12 @@
 
 .portfolio-address-link, .portfolio-footer-mail-link, .portfolio-footer-tel-link {
     text-decoration: none;
-}
+} */
 
 
 /* Section Portfolio Footer Social style  */
-.portfolio-footer-social {
+
+/* .portfolio-footer-social {
     margin-left: 70px;
 }
 
@@ -1111,15 +1114,16 @@
 .portfolio-social-link:hover,
 .portfolio-social-link:focus {
     background-color: var(--primary-blue-color);
-}
+} */
 
 
 /* Section Portfolio Footer Subscription style */
-.portfolio-subscription {
-    margin-left: 93px;
-}
 
-.portfolio-subscription__title {
+/* .portfolio-subscription {
+    margin-left: 93px;
+} */
+
+/* .portfolio-subscription__title {
         display: block;
         margin-top: 0;
         margin-bottom: 20px;
@@ -1130,11 +1134,10 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--primary-white-color);
-}
+} */
 
-.portfolio-subscription__label {}
 
-.portfolio-subscription__group {
+/* .portfolio-subscription__group {
     display: flex;
 }
 
@@ -1179,7 +1182,7 @@
         height: 24px;
         background-image: url(../images/send.svg);
         color: var(--primary-white-color);
-}
+} */
 
 
 
@@ -1239,7 +1242,6 @@
     fill: var(--primary-blue-color);
 } */
 
-.modal-close-icon {}
 
 
 /* Form style */
