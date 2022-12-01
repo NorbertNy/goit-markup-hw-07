@@ -708,7 +708,7 @@ body {
           transform: translateY(0%);
 }
 
-.footer-social {
+.footer__social {
   margin-left: 70px;
 }
 
@@ -726,7 +726,7 @@ body {
   gap: 10px;
 }
 
-.social-header {
+.social__appeal {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
